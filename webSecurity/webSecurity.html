@@ -12,6 +12,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -67,7 +71,7 @@
       </div>
     </nav>
     <span></span>
-    <div id="conteiner">
+    <div class="content">
       <h1>La seguridad en la Web</h1>
       <p>
         Conforme la tecnología avanza cada día se nos ofrecen muchas facilidades
@@ -119,56 +123,79 @@
           hasta el simple <em>bug</em> puede resultar en la filtración de
           información sensible.
         </p>
+        <div id="short-info">
+          <h5>Web Security vs Cyber Security</h5>
+          <p></p>
+        </div>
       </div>
     </div>
-    <div id="elementos" class="d-flex justify-content-around">
-      <div class="card" id="importancia">
-        <img
-          src="https://th.bing.com/th/id/OIP.noVDCATgTNYaUI8EJioftQHaFa?pid=ImgDet&rs=1"
-          class="card-img-top"
-          alt="Web Security"
-          id="placeholder-image"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Historia de la Seguridad de la Web</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+    <div class="container">
+      <div class="card-with-info">
+        <div class="left-column background1-left-column">
+          <h6>Proyecto Redes</h6>
+          <h3>Seguridad Web</h3>
+          <i class="fa fa-web"></i>
+        </div>
+
+        <div class="right-column">
+          <div>
+            <h5>Dificultad</h5>
+            <h6>Baja</h6>
+          </div>
+          <h2>Introducción</h2>
+          <p>
+            Aquí podrán encontrar información relacionada a los origenes de la
+            seguridad Web y su importancia.
           </p>
-          <a href="importance.html" class="btn btn-primary">Leer más</a>
+          <button class="button background1-left-column">Conoce más</button>
         </div>
       </div>
 
-      <div class="card" id="amenazas">
-        <img
-          src="https://th.bing.com/th/id/OIP.05LPm4a75_O7Py4EXC2f5AHaDt?pid=ImgDet&rs=1"
-          class="card-img-top"
-          alt="Amenazas de la web"
-          id="placeholder-image"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Amenazas de la seguridad</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+      <div class="card-with-info">
+        <div class="left-column background2-left-column">
+          <h6>Proyecto Redes</h6>
+          <h3>Seguridad Web</h3>
+          <i class="fa fa-web"></i>
+        </div>
+
+        <div class="right-column">
+          <div>
+            <h5>Dificultad</h5>
+            <h6>Baja</h6>
+          </div>
+          <h2>Amenazas</h2>
+          <p>
+            Aquí podrán encontrar información relacionada a las principales
+            amenazas qe atentan con la Seguridad Web.
           </p>
-          <a href="threats.html" class="btn btn-primary">Leer más</a>
+          <button
+            class="button background2-left-column"
+            onclick="window.location.href='importance'"
+          >
+            Conoce más
+          </button>
         </div>
       </div>
-      <div class="card" id="metodo">
-        <img
-          src="https://th.bing.com/th/id/R.eac0814bc2c31defb6b2824c702a2c36?rik=SiZXeokQGnErgQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-Wr-85XxUVVY%2fTuaJFfT9CyI%2fAAAAAAAAAMo%2fAfviqfe2JWQ%2fs1600%2fweb-security.jpg&ehk=9OJuv1CNTsh%2b6RHJO9iv0UhR%2bKeHNCcldy24jFKoYQQ%3d&risl=&pid=ImgRaw&r=0"
-          class="card-img-top"
-          alt="Medidas de seguridad"
-          id="placeholder-image"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Métodos de seguridad</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+    </div>
+    <div class="container2">
+      <div class="card-with-info">
+        <div class="left-column background3-left-column">
+          <h6>Proyecto Redes</h6>
+          <h3>Seguridad Web</h3>
+          <i class="fa fa-web"></i>
+        </div>
+
+        <div class="right-column">
+          <div>
+            <h5>Dificultad</h5>
+            <h6>Baja</h6>
+          </div>
+          <h2>Prevención</h2>
+          <p>
+            Aquí podrán encontrar información relacionada a medidas de Seguridad
+            que nos pueden servir para proteger nuestra aplicación web.
           </p>
-          <a href="methods.html" class="btn btn-primary">Leer más</a>
+          <button class="button background3-left-column">Conoce más</button>
         </div>
       </div>
     </div>
