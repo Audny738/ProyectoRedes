@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="background-color: #c8e8f1">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Redes y Seguridad</a>
@@ -40,52 +40,93 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="methods.html"
-                >Cómo podemos mantener nuestras aplicaciones seguras?</a
+              <a class="nav-link" href="threats.html"
+                >Amenazas a la Seguridad Web</a
               >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <span></span>
-    <div id="container">
-      h2
-      <div class="clearfix">
-        <img src="..." class="col-md-6 float-md-end mb-3 ms-md-3" alt="..." />
-
-        <p>
-          A paragraph of placeholder text. We're using it here to show the use
-          of the clearfix class. We're adding quite a few meaningless phrases
-          here to demonstrate how the columns interact here with the floated
-          image.
-        </p>
-
-        <p>
-          As you can see the paragraphs gracefully wrap around the floated
-          image. Now imagine how this would look with some actual content in
-          here, rather than just this boring placeholder text that goes on and
-          on, but actually conveys no tangible information at. It simply takes
-          up space and should not really be read.
-        </p>
-
-        <p>
-          And yet, here you are, still persevering in reading this placeholder
-          text, hoping for some more insights, or some hidden easter egg of
-          content. A joke, perhaps. Unfortunately, there's none of that here.
-        </p>
+    <h1 class="site-title" style="text-align: center; padding: 5px">
+      ¿Cómo podemos mantener nuestras aplicaciones seguras?
+    </h1>
+    <section class="content">
+      <div class="text-center" style="padding: 10px">
+        <img
+          src="https://th.bing.com/th/id/R.b268d5d74d66c7345e0a54017ce01a53?rik=rkx6WxkBSj8xng&pid=ImgRaw&r=0"
+          alt="Web"
+          style="width: 50%"
+        />
       </div>
-      <div>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/6HJAWFenYx8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
+      <article class="post">
+        <div class="container">
+          <p align="justify">
+            Como ya vimos anteriormente, existen innumerables amenazas hacia la
+            web y, por lo tanto, debemos asegurar nuestro sitio con las medidas
+            necesarias. A continuacion se enlistan ciertas medidas con base al
+            enfoque que se quiere proteger.
+          </p>
+          <div class="clearfix">
+            <h3>Asegurar el Contenido</h3>
+            <h4 style="font-family: Helvica">
+              <ul>
+                <li>Política de Seguridad de Contenido</li>
+              </ul>
+            </h4>
+            <div
+              class="col-md-8 float-md-end mb-3 ms-md-3"
+              style="
+                background-color: rgba(85, 67, 67, 0.243);
+                border-radius: 0.3rem;
+              "
+            >
+              <pre><code>&#x3C;meta
+                http-equiv=&#x22;Content-Security-Policy&#x22;
+                content=&#x22;default-src &#x27;self&#x27;; img-src https://*; child-src &#x27;none&#x27;;&#x22; /&#x3E;</code></pre>
+            </div>
+            <p>
+              Es una capa extra de seguridad que ayuda a detectar y mitigar
+              cietos tipos de ataque como el
+              <em>Cross-Site Scripting (XSS)</em> o la inyección de datos. La
+              forma de integrarlo se muestra en el snippet adjunto.
+            </p>
+          </div>
+          <div class="clearfix">
+            <h3>Asegurar la Conexión</h3>
+            <div class="col-md-5 float-md-end mb-3 ms-md-3">
+              <h4 style="font-family: Helvica">
+                <ul>
+                  <li>Seguridad en la capa de Transporte (TLS)</li>
+                </ul>
+              </h4>
+              <p>
+                Es un estánar que permite a dos aplicaciones o dispositivos
+                conectados a la red el intercambio de información privada. En
+                esta sección vale la pena hablar sobre SSL.
+              </p>
+              <h5>Secure Socket Layer (SSL)</h5>
+            </div>
+            <h4 style="font-family: Helvica">
+              <ul>
+                <li>HTTPS</li>
+              </ul>
+            </h4>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/6HJAWFenYx8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
   </body>
 </html>
