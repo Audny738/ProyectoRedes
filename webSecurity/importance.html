@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción a Seguridad Web</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: #c8e8f1">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Redes y Seguridad</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="webSecurity.html"
+                >Seguridad de la Web</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="threats.html">Amenazas a la Web</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="methods.html"
+                >Cómo podemos mantener nuestras aplicaciones seguras?</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="site-title" style="text-align: center; padding: 5px">
+      Introducción a Seguridad Web
+    </h1>
+
+    <section class="content">
+      <div class="text-center">
+        <img
+          src="https://th.bing.com/th/id/R.0de910132de86cef567cf43b565514d3?rik=9fHWw3qIRpGzOw&pid=ImgRaw&r=0"
+          alt="Web"
+          style="width: 75%"
+        />
+      </div>
+      <article class="post">
+        <div class="container">
+          <h2 style="padding: 5px; margin: 5px">
+            Breve historia de la seguridad de la Web
+          </h2>
+          <p align="justify">
+            En años anteriores no se tomaba tanta importancia a la seguridad
+            como hoy en día e incluso se habla de un despertar de la seguridad
+            de la web. Para esto se brinda un poco de historia en donde las
+            técnicas de ataque a la Web pueden dividirse en varias fases.
+          </p>
+          <div class="columns">
+            <div class="item">
+              <h4 class="item-title">Primeros ataques</h4>
+              <p align="justify">
+                La primera es la era de la <strong>Web 1.0</strong>. Esta época
+                se caracteriza por la priorización scripts ejecutables
+                implementados al servidor para brindar permisos; sin embargo,
+                gracias a la falta de conocimientos en tecnologías para la
+                seguridad de la Web en los primeros años, se presentaron
+                diferentes problemas. Por ejemplo, el lenguaje
+                <strong>PHP</strong> aún dependía de buenas especificaciones de
+                código para asegurarse que el archivo no tuviera ningún bucle,
+                en lugar de que el mismo lenguaje prevenga estos problemas.
+              </p>
+            </div>
+            <h4 class="item-title">El primer ataque</h4>
+            <div class="clearfix">
+              <iframe
+                class="col-md-7 float-md-end mb-3 ms-md-3"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qzE07kZ6CHk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                align="center"
+              ></iframe>
+              <p align="justify">
+                La inyeccón SQL , aparecida por primera vez en 1999, es un hito
+                en la historia de la seguridad web pues representó una gran
+                amenaza, donde los programadores tenían que constantemente
+                reparar los bucles y contrarrestar ataques mientras que los
+                hackers podían tener acceso a información importante y sensible
+                además de poder acceder al sistema a través de la base de datos.
+              </p>
+              <img
+                src="https://th.bing.com/th/id/R.4e1b8df1dd005141d1885e3ef49a7921?rik=fX%2f4f%2fhf7%2fjXkw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-_EzcQboxFew%2fUKhnHtYx0GI%2fAAAAAAAAAxs%2f4HJsSaUMXn8%2fs1600%2f2.jpg&ehk=bsaLkfTjdv8G%2fE0KwMJqPHX4aB16l0Q7xeaJ4maiL4M%3d&risl=&pid=ImgRaw&r=0"
+                alt="SQL Injection"
+                width="35%"
+                align="center"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="full-bleed cool-photo2"></div>
+      <article class="post">
+        <div class="container">
+          <div class="columns thirds">
+            <div class="clearfix">
+              <h4 class="item-title" align="right">Ataque XSS</h4>
+              <div id="info" class="col-md-3 float-md-end mb-3 ms-md-3">
+                <p>
+                  Otro gran hito es el ataque XSS (cross-site scripting) . De
+                  hecho, apareció casi al mismo tiempo que las inyecciones SQL,
+                  pero, el ataque XSS apenas se popularizó en 2003. Después del
+                  gusano MySpace XSS, la comunidad de la seguridad web tomo
+                  conciencia de la gran amenaza que representaba XSS.
+                </p>
+                <p>
+                  Con el surgimiento de la <strong>Web 2.0</strong> los ataques
+                  de XSS y CSRF se volvieron más peligrosos pues ya no solo
+                  atacaban del lado del servidor, sino que ahora se involucraban
+                  del lado del cliente, navegadores y usuarios, abarcando cada
+                  aspecto de la web.
+                </p>
+              </div>
+              <img
+                src="https://images.vice.com/motherboard/content-images/article/26265/1443906790842989.jpg?image-resize-opts=Y3JvcD0xeHc6MC44NDM3NXhoO2NlbnRlcixjZW50ZXImcmVzaXplPTEyMDA6KiZyZXNpemU9MTIwMDoq"
+                alt="MySpace XSS Worm"
+                width="70%"
+                style="padding: 10px"
+              />
+              <span></span>
+              <p>
+                Con el crecimiento del internet y las tecnologías de la web, se
+                han desarrollado varios lenguajes como Python, Ruby, Node JS,
+                etc. Además, con el ascenso del desarrollo móvil han brindado
+                nuevas oportunidades y desafíos al HTML 5 por lo cual se
+                requiere una constante actualización para evolucionar en la
+                seguridad de la web.
+              </p>
+            </div>
+
+            <div class="item"></div>
+          </div>
+        </div>
+      </article>
+      <article class="post">
+        <div class="container">
+          <div class="item">
+            <h2>Importancia de la seguridad de la Web</h2>
+            <p>
+              Una vez discutido brevemente la historia de la seguridad web
+              podemos hablar su importancia. Existen cuatro razones
+              fundamentales para ello:
+            </p>
+            <ol>
+              <li>
+                La protección del host solo asegura al servidor que lo alberga,
+                no a la aplicación en sí.
+              </li>
+              <li>
+                Es más barato proteger la aplicación web que enfrentarse a un
+                ciberataque.
+              </li>
+              <li>
+                Protege la reputación del sitio haciendo que los clientes y
+                usuarios se retengan a volver a utilizar el sitio.
+              </li>
+              <li>Ciberataques y Malwares pueden ser difíciles de detectar.</li>
+            </ol>
+          </div>
+          <div id="small-info">
+            <h5>A primera vista…</h5>
+            <p>
+              Si no sabe si un sitio web es seguro, aquí se tienen algunas
+              características que le ayudaran a detectar a primer vistazo si el
+              sitio es confiable:
+            </p>
+            <ul>
+              <li>
+                ¿Es el sitio Web de una institución de autoridad establecida?
+              </li>
+              <li>¿El sitio provee información de expertos?</li>
+              <li>¿El sitio web parece spam?</li>
+              <li>
+                Cuando paso el cursor sobre los enlaces, ¿el enlace parece spam?
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="webSecurity.html">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="webSecurity.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="threats.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="methods.html">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="threats.html">Next</a>
+        </li>
+      </ul>
+    </nav>
+</html>
