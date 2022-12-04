@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Principios de Seguridad Web</title>
+    <title>Introducción a Seguridad Web</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,12 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <h1 class="site-title">Principios de la Seguridad Web</h1>
-      </div>
-    </header>
+  <body style="background-color: #c8e8f1">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Redes y Seguridad</a>
@@ -51,19 +46,24 @@
         </div>
       </div>
     </nav>
-    <span></span>
+    <h1 class="site-title" style="text-align: center; padding: 5px">
+      Introducción a Seguridad Web
+    </h1>
 
     <section class="content">
-      <div class="full-bleed cool-photo">
+      <div class="text-center">
         <img
           src="https://th.bing.com/th/id/R.0de910132de86cef567cf43b565514d3?rik=9fHWw3qIRpGzOw&pid=ImgRaw&r=0"
           alt="Web"
+          style="width: 75%"
         />
       </div>
       <article class="post">
         <div class="container">
-          <h2>Breve historia de la seguridad de la Web</h2>
-          <p>
+          <h2 style="padding: 5px; margin: 5px">
+            Breve historia de la seguridad de la Web
+          </h2>
+          <p align="justify">
             En años anteriores no se tomaba tanta importancia a la seguridad
             como hoy en día e incluso se habla de un despertar de la seguridad
             de la web. Para esto se brinda un poco de historia en donde las
@@ -72,7 +72,7 @@
           <div class="columns">
             <div class="item">
               <h4 class="item-title">Primeros ataques</h4>
-              <p>
+              <p align="justify">
                 La primera es la era de la <strong>Web 1.0</strong>. Esta época
                 se caracteriza por la priorización scripts ejecutables
                 implementados al servidor para brindar permisos; sin embargo,
@@ -84,9 +84,20 @@
                 en lugar de que el mismo lenguaje prevenga estos problemas.
               </p>
             </div>
-            <div class="item">
-              <h4 class="item-title">El primer ataque</h4>
-              <p>
+            <h4 class="item-title">El primer ataque</h4>
+            <div class="clearfix">
+              <iframe
+                class="col-md-7 float-md-end mb-3 ms-md-3"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qzE07kZ6CHk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                align="center"
+              ></iframe>
+              <p align="justify">
                 La inyeccón SQL , aparecida por primera vez en 1999, es un hito
                 en la historia de la seguridad web pues representó una gran
                 amenaza, donde los programadores tenían que constantemente
@@ -97,59 +108,42 @@
               <img
                 src="https://th.bing.com/th/id/R.4e1b8df1dd005141d1885e3ef49a7921?rik=fX%2f4f%2fhf7%2fjXkw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-_EzcQboxFew%2fUKhnHtYx0GI%2fAAAAAAAAAxs%2f4HJsSaUMXn8%2fs1600%2f2.jpg&ehk=bsaLkfTjdv8G%2fE0KwMJqPHX4aB16l0Q7xeaJ4maiL4M%3d&risl=&pid=ImgRaw&r=0"
                 alt="SQL Injection"
+                width="35%"
+                align="center"
               />
             </div>
           </div>
         </div>
       </article>
-      <div class="full-bleed cool-photo2">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/qzE07kZ6CHk"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
+      <div class="full-bleed cool-photo2"></div>
       <article class="post">
         <div class="container">
           <div class="columns thirds">
-            <div class="item">
-              <h4 class="item-title">Ataque XSS</h4>
-              <p>
-                Otro gran hito es el ataque XSS (cross-site scripting) . De
-                hecho, apareció casi al mismo tiempo que las inyecciones SQL,
-                pero, el ataque XSS apenas se popularizó en 2003. Después del
-                gusano MySpace XSS, la comunidad de la seguridad web tomo
-                conciencia de la gran amenaza que representaba XSS.
-              </p>
-              <div class="social">
-                <a href="https://youtu.be/DtnuaHl378M"
-                  ><i class="fa fa-google"></i
-                ></a>
+            <div class="clearfix">
+              <h4 class="item-title" align="right">Ataque XSS</h4>
+              <div id="info" class="col-md-3 float-md-end mb-3 ms-md-3">
+                <p>
+                  Otro gran hito es el ataque XSS (cross-site scripting) . De
+                  hecho, apareció casi al mismo tiempo que las inyecciones SQL,
+                  pero, el ataque XSS apenas se popularizó en 2003. Después del
+                  gusano MySpace XSS, la comunidad de la seguridad web tomo
+                  conciencia de la gran amenaza que representaba XSS.
+                </p>
+                <p>
+                  Con el surgimiento de la <strong>Web 2.0</strong> los ataques
+                  de XSS y CSRF se volvieron más peligrosos pues ya no solo
+                  atacaban del lado del servidor, sino que ahora se involucraban
+                  del lado del cliente, navegadores y usuarios, abarcando cada
+                  aspecto de la web.
+                </p>
               </div>
-            </div>
-            <div class="item">
-              <figure>
-                <img
-                  src="https://images.vice.com/motherboard/content-images/article/26265/1443906790842989.jpg?image-resize-opts=Y3JvcD0xeHc6MC44NDM3NXhoO2NlbnRlcixjZW50ZXImcmVzaXplPTEyMDA6KiZyZXNpemU9MTIwMDoq"
-                  alt="MySpace XSS Worm"
-                />
-                <figcaption>
-                  Gusano MySpace XSS que cambió la historia del Internet.
-                </figcaption>
-              </figure>
-            </div>
-            <div class="item">
-              <p>
-                Con el surgimiento de la <strong>Web 2.0</strong> los ataques de
-                XSS y CSRF se volvieron más peligrosos pues ya no solo atacaban
-                del lado del servidor, sino que ahora se involucraban del lado
-                del cliente, navegadores y usuarios, abarcando cada aspecto de
-                la web.
-              </p>
+              <img
+                src="https://images.vice.com/motherboard/content-images/article/26265/1443906790842989.jpg?image-resize-opts=Y3JvcD0xeHc6MC44NDM3NXhoO2NlbnRlcixjZW50ZXImcmVzaXplPTEyMDA6KiZyZXNpemU9MTIwMDoq"
+                alt="MySpace XSS Worm"
+                width="70%"
+                style="padding: 10px"
+              />
+              <span></span>
               <p>
                 Con el crecimiento del internet y las tecnologías de la web, se
                 han desarrollado varios lenguajes como Python, Ruby, Node JS,
@@ -159,6 +153,8 @@
                 seguridad de la web.
               </p>
             </div>
+
+            <div class="item"></div>
           </div>
         </div>
       </article>
@@ -208,8 +204,17 @@
         </div>
       </article>
     </section>
-    <footer class="footer">
-      <div class="container"></div>
-    </footer>
-  </body>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="webSecurity.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="threats.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="methods.html">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="threats.html">Next</a>
+        </li>
+      </ul>
+    </nav>
 </html>
