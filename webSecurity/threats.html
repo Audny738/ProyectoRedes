@@ -12,26 +12,79 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div id="navbar-header">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="webSecurity.html"
-            >Seguridad de la Web</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="importance.html"
-            >Importancia de la Seguridad de la Web</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="methods.html"
-            >¿Cómo podemos mantener nuestras aplicaciones seguras?</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div id="container"></div>
+  <body style="background-color: #c8e8f1">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Redes y Seguridad</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="webSecurity.html"
+                >Seguridad de la Web</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="importance.html"
+                >Principios de la Seguridad Web</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="methods.html"
+                >Cómo podemos mantener nuestras aplicaciones seguras?</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="site-title" style="text-align: center; padding: 5px">
+      Amenazas a la Seguridad Web
+    </h1>
+    <section class="content">
+      <div class="full-bleed cool-photo" style="display: block">
+        <img
+          src="https://www.pwc.be/en/images/2col-visual-game-of-threats-man-cybersecurity-perpatrator-danger.png"
+          alt="Web"
+          style="width: 50%"
+        />
+      </div>
+      <article class="post">
+        <div class="container">
+          <p>
+            La definición de <strong>amenaza</strong> consiste en un evento que
+            puede dañar y perjudicar un sistema de información. Ahora, una
+            <strong>amenaza a la seguridad</strong> es un riesgo que puede dañar
+            sistemas computacionales y organizaciones. La principal intención de
+            un ataque a la seguridad robar, alterar o destruir una pieza de
+            información personal y confidencial, robar el espacio del disco duro
+            y acceder ilegalmente a las contraseñas.
+          </p>
+          <p>
+            Por lo general, la Seguridad Web lidia con dos tipos de atacantes:
+            los <em>atacantes web</em> y los <em>atacantes de redes</em> Un
+            <strong>atacante web</strong> controla al menos un servidor que
+            responde a cualquier solicitud enviada con contenido malicioso. Los
+            <strong>atacantes de red</strong> extienden las capacidades de los
+            atacantes web con la habilidad de detectar e interceptar todo el
+            tráfico enviado entre dos <em>endpoints</em>.
+          </p>
+          <div>
+            <h3>OWASP</h3>
+          </div>
+        </div>
+      </article>
+    </section>
   </body>
 </html>
