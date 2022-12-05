@@ -16,64 +16,49 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Redes y Seguridad</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <div id="nav"></div>
+    <script>
+      $(function () {
+        $("#nav").load("../components/navbar.html");
+      });
+    </script>
+    <span></span>
+    <div class="container p-3">
+      <div
+        style="
+          text-align: center;
+          margin-left: 25%;
+          margin-top: 4%;
+          width: 50%;
+          position: relative;
+        "
+      >
+        <img
+          src="../assets/images/IOT1.png"
+          alt="Cinque Terre"
+          width="40%"
+          height="auto"
+          style="opacity: 0.1"
+        />
+        <div
+          style="position: absolute; top: 25%; width: 100%; text-align: center"
+          class="center"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="../dataComunication/dataComunicationSecurity.html"
-                >Seguridad en la comunicación de los datos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="webSecurity.html"
-                >Seguridad en la Web</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../sockets/sockets.html"
-                >Programación de aplicaciones con Sockets</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="../internetOfThings/internetOfThings.html"
-                >Internet de las cosas</a
-              >
-            </li>
-          </ul>
+          <h1 class="text-center mb-5 fw-bolder">Seguridad en la web</h1>
         </div>
       </div>
-    </nav>
-    <span></span>
-    <div class="content">
-      <h1 style="text-align: center; padding: 5px">La seguridad en la Web</h1>
-      <p>
+      <br>
+      <br>
+      <h2>La web</h2>
+      <p align="justify" class="lh-sm fs-5">
         Conforme la tecnología avanza cada día se nos ofrecen muchas facilidades
         para cada una de nuestras necesidades. Un lugar donde podemos acudir
         para ello es la <strong>Web</strong>. Si bien sus inicios no se pueden
@@ -87,41 +72,43 @@
           >Historia de las Páginas Web</a
         >.
       </p>
-      <div align="center">
-        <figure style="display: inline-block">
-          <img
-            src="https://i2.wp.com/www.cienciahistorica.com/wp-content/uploads/2016/01/Primera-web.jpg"
-            alt="Primera página web en la historia"
-            width="400"
-            height="341"
-          />
-          <figcaption>
-            Primera página web, creada por el inglés Tim Berners-Lee.
-          </figcaption>
-        </figure>
-        <figure style="display: inline-block">
-          <img
-            src="https://th.bing.com/th/id/R.70272da2dc70b7fce8d798bda847d371?rik=FSZUUa60RGXyFA&pid=ImgRaw&r=0"
-            alt="Moder web pages"
-            width="400"
-            height="341"
-          />
-          <figcaption>Las páginas web actuales.</figcaption>
-        </figure>
+      <div class="row">
+        <div class="col col-6">
+          <figure style="display: inline-block">
+            <img
+              src="https://i2.wp.com/www.cienciahistorica.com/wp-content/uploads/2016/01/Primera-web.jpg"
+              alt="Primera página web en la historia"
+              class="rounded-1 col-12"
+            />
+            <figcaption>
+              Primera página web, creada por el inglés Tim Berners-Lee.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col col-6">
+          <figure style="display: inline-block">
+            <img
+              src="https://th.bing.com/th/id/R.70272da2dc70b7fce8d798bda847d371?rik=FSZUUa60RGXyFA&pid=ImgRaw&r=0"
+              alt="Moder web pages"
+              class="rounded-1 col-12"
+            />
+            <figcaption>Las páginas web actuales.</figcaption>
+          </figure>
+        </div>
       </div>
     </div>
     <div class="container">
       <div class="clearfix">
         <div class="col-md-5 float-md-end mb-3 ms-md-3">
-          <h6>
+          <h5>
             <strong> Web Security vs Website Security</strong>
-          </h6>
-          <p align="justify">
+          </h5>
+          <p align="justify" class="lh-sm fs-5">
             Debido a la similitud que presentan en su escritura normalmente se
             llega a confundir ambos conceptos pero aquí se aclara esta
             confusión.
           </p>
-          <p align="justify">
+          <p align="justify" class="lh-sm fs-5">
             Primero la seguridad web es sinónimo de
             <a
               href="https://www.fortinet.com/resources/cyberglossary/cybersecurity"
@@ -135,7 +122,7 @@
             web.
           </p>
         </div>
-        <p align="justify">
+        <p align="justify" class="lh-sm fs-5">
           Hoy en día se estiman que existen alrededor de
           <strong>1.700 millones</strong> de sitios web y, aunque los recursos y
           oportunidades aumentan, también lo hacen los peligros como los
@@ -149,79 +136,87 @@
           src="https://www.fullhost.com/wp-content/uploads/2022/01/wordpress_db_prefix_security.png"
           alt="front and back"
           width="50%"
+          class="rounded-1"
         />
       </div>
-    </div>
-    <div class="container3">
-      <div class="card-with-info">
-        <div class="left-column background1-left-column">
-          <h6>Proyecto Redes</h6>
-          <h3>Seguridad Web</h3>
-          <i class="fa fa-web"></i>
-        </div>
-
-        <div class="right-column">
-          <div>
-            <h5>Dificultad</h5>
-            <h6>Baja</h6>
+      <div class="container3">
+        <div class="card-with-info">
+          <div class="left-column background1-left-column">
+            <h6>Proyecto Redes</h6>
+            <h3>Seguridad Web</h3>
+            <i class="fa fa-web"></i>
           </div>
-          <h2>Introducción</h2>
-          <p>
-            Aquí podrán encontrar información relacionada a los origenes de la
-            seguridad Web y su importancia.
-          </p>
-          <button class="button background1-left-column">
-            <a href="importance.html" style="color: white">Conoce más</a>
-          </button>
+          <div class="right-column">
+            <div>
+              <h5>Dificultad</h5>
+              <h6>Baja</h6>
+            </div>
+            <h2>Introducción</h2>
+            <p>
+              Aquí podrán encontrar información relacionada a los origenes de la
+              seguridad Web y su importancia.
+            </p>
+            <button class="button background1-left-column">
+              <a href="importance.html" style="color: white">Conoce más</a>
+            </button>
+          </div>
+        </div>
+        <div class="card-with-info">
+          <div class="left-column background2-left-column">
+            <h6>Proyecto Redes</h6>
+            <h3>Seguridad Web</h3>
+            <i class="fa fa-web"></i>
+          </div>
+
+          <div class="right-column">
+            <div>
+              <h5>Dificultad</h5>
+              <h6>Baja</h6>
+            </div>
+            <h2>Amenazas</h2>
+            <p>
+              Aquí podrán encontrar información relacionada a las principales
+              amenazas qe atentan con la Seguridad Web.
+            </p>
+            <button class="button background2-left-column">
+              <a href="threats.html" style="color: white">Conoce más</a>
+            </button>
+          </div>
         </div>
       </div>
-
-      <div class="card-with-info">
-        <div class="left-column background2-left-column">
-          <h6>Proyecto Redes</h6>
-          <h3>Seguridad Web</h3>
-          <i class="fa fa-web"></i>
-        </div>
-
-        <div class="right-column">
-          <div>
-            <h5>Dificultad</h5>
-            <h6>Baja</h6>
+      <div class="container2">
+        <div class="card-with-info">
+          <div class="left-column background3-left-column">
+            <h6>Proyecto Redes</h6>
+            <h3>Seguridad Web</h3>
+            <i class="fa fa-web"></i>
           </div>
-          <h2>Amenazas</h2>
-          <p>
-            Aquí podrán encontrar información relacionada a las principales
-            amenazas qe atentan con la Seguridad Web.
-          </p>
-          <button class="button background2-left-column">
-            <a href="threats.html" style="color: white">Conoce más</a>
-          </button>
+
+          <div class="right-column">
+            <div>
+              <h5>Dificultad</h5>
+              <h6>Baja</h6>
+            </div>
+            <h2>Prevención</h2>
+            <p>
+              Aquí podrán encontrar información relacionada a medidas de
+              Seguridad que nos pueden servir para proteger nuestra aplicación
+              web.
+            </p>
+            <button class="button background3-left-column">
+              <a href="methods.html" style="color: white">Conoce más</a>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container2">
-      <div class="card-with-info">
-        <div class="left-column background3-left-column">
-          <h6>Proyecto Redes</h6>
-          <h3>Seguridad Web</h3>
-          <i class="fa fa-web"></i>
-        </div>
-
-        <div class="right-column">
-          <div>
-            <h5>Dificultad</h5>
-            <h6>Baja</h6>
-          </div>
-          <h2>Prevención</h2>
-          <p>
-            Aquí podrán encontrar información relacionada a medidas de Seguridad
-            que nos pueden servir para proteger nuestra aplicación web.
-          </p>
-          <button class="button background3-left-column">
-            <a href="methods.html" style="color: white">Conoce más</a>
-          </button>
-        </div>
-      </div>
-    </div>
+    <br />
+    <br />
+    <br />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

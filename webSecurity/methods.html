@@ -11,62 +11,70 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body style="background-color: #c8e8f1">
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Redes y Seguridad</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+  <body >
+    <div id="nav"></div>
+    <script>
+      $(function () {
+        $("#nav").load("../components/navbar.html");
+      });
+    </script>
+    <div class="container p-3">
+      <div
+        style="
+          text-align: center;
+          margin-left: 25%;
+          margin-top: 4%;
+          width: 50%;
+          position: relative;
+        "
+      >
+        <img
+          src="../assets/images/IOT1.png"
+          alt="Cinque Terre"
+          width="40%"
+          height="auto"
+          style="opacity: 0.1"
+        />
+        <div
+          style="position: absolute; top: 25%; width: 100%; text-align: center"
+          class="center"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="webSecurity.html"
-                >Seguridad de la Web</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="importance.html"
-                >Principios de la Seguridad Web</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="threats.html"
-                >Amenazas a la Seguridad Web</a
-              >
-            </li>
-          </ul>
+          <h1 class="text-center mb-5 fw-bolder">Seguridad en la web</h1>
         </div>
       </div>
-    </nav>
-    <h1 class="site-title" style="text-align: center; padding: 5px">
-      ¿Cómo podemos mantener nuestras aplicaciones seguras?
-    </h1>
-    <section class="content">
-      <div class="text-center" style="padding: 10px">
-        <img
-          src="https://th.bing.com/th/id/R.b268d5d74d66c7345e0a54017ce01a53?rik=rkx6WxkBSj8xng&pid=ImgRaw&r=0"
-          alt="Web"
-          style="width: 50%"
-        />
-      </div>
-      <article class="post">
+      <br />
+      <br />
+      <h2>
+        ¿Cómo podemos mantener nuestras aplicaciones seguras?
+      </h2>
+      
         <div class="container">
-          <p align="justify">
+          <p align="justify" class="lh-sm fs-5">
             Como ya vimos anteriormente, existen innumerables amenazas hacia la
             web y, por lo tanto, debemos asegurar nuestro sitio con las medidas
             necesarias. A continuacion se enlistan ciertas medidas con base al
             enfoque que se quiere proteger.
           </p>
+          <div class="text-center" style="padding: 10px">
+            <img
+              src="https://th.bing.com/th/id/R.b268d5d74d66c7345e0a54017ce01a53?rik=rkx6WxkBSj8xng&pid=ImgRaw&r=0"
+              alt="Web"
+              style="width: 50%"
+              class="rounded-1"
+            />
+          </div>
+          <article class="post">
           <div class="clearfix">
             <h3>Asegurar el Contenido</h3>
             <h4 style="font-family: Helvica">
@@ -87,7 +95,7 @@
                 content=&#x22;default-src &#x27;self&#x27;; img-src https://*; child-src &#x27;none&#x27;;&#x22; /&#x3E;
               </code></pre>
             </div>
-            <p>
+            <p class="lh-sm fs-5">
               Es una capa extra de seguridad que ayuda a detectar y mitigar
               cietos tipos de ataque como el
               <em>Cross-Site Scripting (XSS)</em> o la inyección de datos. La
@@ -102,13 +110,13 @@
                   <li>Seguridad en la capa de Transporte (TLS)</li>
                 </ul>
               </h4>
-              <p>
+              <p class="lh-sm fs-5">
                 Es un estánar que permite a dos aplicaciones o dispositivos
                 conectados a la red el intercambio de información privada. Un
                 caso de uso común de TLS es encriptar la comunicación entre
                 aplicaciones web y servidores.
               </p>
-              <p>
+              <p class="lh-sm fs-5">
                 Para que una aplicación web use el TLS debe tener un certificado
                 TLS, también conocido con certificado SSL, instalado en tu
                 servidor origen. Una autoridad certificada es la encargada de
@@ -118,14 +126,14 @@
                 hablar un poco más a fondo del tema.
               </p>
               <h5>Secure Socket Layer (SSL)</h5>
-              <p>
+              <p class="lh-sm fs-5">
                 Este era un viejo protocolo de seguridad para crear un enlace de
                 red encriptado entre el servidor y el cliente, asegurando que
                 toda la información pase de manera rápida y segura. SSL es el
                 predecesor de TLS y un sitio web que tiene HTTPS en su URL
                 implementa SSL/TLS.
               </p>
-              <p>
+              <p class="lh-sm fs-5">
                 Al igual que TLS, existen certificados SSL. Estos certificados
                 son como una tarjeta de identificación que valida que eres quien
                 dices ser.
@@ -136,7 +144,7 @@
                 <li>HTTPS</li>
               </ul>
             </h4>
-            <p>
+            <p class="lh-sm fs-5">
               El HyperText Transfer Protocol Secure (HTTPS) es una versión
               encriptada del protocolo HTTP. Utiliza SSL o TLS para encriptar
               toda la comunicación entre un cliente y un servidor. Esto conexión
@@ -163,7 +171,7 @@
                 <li>HTTP Strict-Transport-Security</li>
               </ul>
             </h4>
-            <p>
+            <p class="lh-sm fs-5">
               Es un encabezado de HTTP que deja a un sitio web especificar que
               solo puede ser accedida utilizando HTTPS.
             </p>
@@ -184,7 +192,7 @@
                 <li>Transparecia de Certificados</li>
               </ul>
             </h4>
-            <p>
+            <p class="lh-sm fs-5">
               Es un framework diseñado para proteger y monitorear emisiones
               erróneas de certificados. Los certificados recién emitidos se
               "registran" para ejecutar públicamente, a menudo son registros CT
@@ -196,7 +204,7 @@
                 <li>Contexto Seguro</li>
               </ul>
             </h4>
-            <p>
+            <p class="lh-sm fs-5">
               Un contexto seguro es una ventana en la cual hay una confianza
               razonable de que el contenido ha sido entregado seguro y limita a
               los que el potencial para la comunicación con contextos no es
@@ -216,7 +224,7 @@
                 <li>HTTP Cookies</li>
               </ul>
             </h4>
-            <p>
+            <p class="lh-sm fs-5">
               Pequeña pieza de información que el servidor le envía al navegador
               web del usuario. El navegador puede almacenarlo y enviarlo de
               vuelta con otras peticiones al servidor. Normalmente, es usuado
@@ -228,14 +236,14 @@
                 <li>Política del mismo origen</li>
               </ul>
             </h4>
-            <p>
+            <p class="lh-sm fs-5">
               Es un mecanismo de seguridad crítico que restringe como un
               documento o <em>scrpt</em> cargado desde el origen puede
               interactuar con un recurso de otro origen aislando los potenciales
               documentos maliciosos.
             </p>
             <h3>Protección de los <em>clickjack</em></h3>
-            <p>
+            <p class="lh-sm fs-5">
               <em>Clickjacking</em> es un ataque que se hospeda en la interfaz
               del sitio, manipulando a los usuarios a apretarlo para dirigirlos
               a enlaces maliciosos. Aquí los atacantes incrustan sus enlaces
@@ -247,7 +255,7 @@
                 <li>HTTP X-Frame-Options</li>
               </ul>
             </h4>
-            <p>
+            <p class="lh-sm fs-5">
               Es utilizado para indicar si el navegador puede renderizar una
               página en un <code>&#x3C;frame&#x3E;</code>,
               <code>&#x3C;iframe&#x3E;</code>, <code>&#x3C;embed&#x3E;</code> u
@@ -260,7 +268,7 @@
                 <li>CSP: frame-ancestors</li>
               </ul>
             </h4>
-            <p>
+            <p class="lh-sm fs-5">
               La directiva CSP frame-ancestors especifica padres válidos que
               pueden insertar una página usuando <code>&#x3C;frame&#x3E;</code>,
               <code>&#x3C;iframe&#x3E;</code>, <code>&#x3C;embed&#x3E;</code>,
@@ -269,7 +277,7 @@
           </div>
         </div>
       </article>
-    </section>
+    </div>
 
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
@@ -277,18 +285,25 @@
           <a class="page-link" href="threats.html">Previous</a>
         </li>
         <li class="page-item">
-          <a class="page-link" href="webSecurity.html">1</a>
+          <a class="page-link" href="importance.html">1</a>
         </li>
         <li class="page-item">
-          <a class="page-link" href="importance.html">2</a>
+          <a class="page-link" href="threats.html">2</a>
         </li>
         <li class="page-item">
-          <a class="page-link" href="threats.html">3</a>
+          <a class="page-link" href="methods.html">3</a>
         </li>
         <li class="page-item disabled">
           <a class="page-link">Next</a>
         </li>
       </ul>
     </nav>
+    <br />
+    <br />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

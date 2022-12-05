@@ -10,67 +10,51 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/styles/socketTypes.css" />
     <title>Sockets Types</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Redes y Seguridad</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="../dataComunication/dataComunicationSecurity.html"
-                >Seguridad en la comunicación de los datos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../webSecurity/webSecurity.html"
-                >Seguridad en la Web</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sockets.html"
-                >Programación de aplicaciones con Sockets</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="../internetOfThings/internetOfThings.html"
-                >Internet de las cosas</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="nav"></div>
+    <script>
+      $(function () {
+        $("#nav").load("../components/navbar.html");
+      });
+    </script>
     <div class="container p-3">
-      <h1 class="text-center mb-5">Programación de aplicaciones con sockets</h1>
+      <div class="container p-3">
+        <div
+          style="
+            text-align: center;
+            margin-left: 25%;
+            margin-top: 4%;
+            width: 50%;
+            position: relative;
+          "
+        >
+          <img
+            src="../assets/images/IOT1.png"
+            alt="Cinque Terre"
+            width="40%"
+            height="auto"
+            style="opacity: 0.1"
+          />
+          <div
+            style="position: absolute; top: 25%; width: 100%; text-align: center"
+            class="center"
+          >
+            <h1 class="text-center mb-5 fw-bolder">Programación de aplicaciones con sockets</h1>
+          </div>
+        </div>
+        <br>
       <h2 class="mb-4">Tipos de socket</h2>
       <h4>SOCK_STREAM</h4>
-      <p class="lh-sm fs-5">
+      <p class="lh-sm fs-5" align="justify">
         En el caso del SOCK_STREAM o socket de flujo, se asocia al Transmission
         Control Protocol (TCP) o Protocolo de Transmisión de informaciones. Este
         tipo de sockets establece conexión antes de la comunicación y garantiza
@@ -80,7 +64,7 @@
         información.
       </p>
       <h4>SOCK_DGRAM</h4>
-      <p class="lh-sm fs-5">
+      <p class="lh-sm fs-5" align="justify">
         El Datagram Socket por su lado, se encuentra asociado al Protocolo de
         Datagramas de Usuario (UDP). El SOCK_DGRAM se encargará del viaje de los
         paquetes en formato de datagrama. Los paquetes enviados por este tipo de
@@ -89,7 +73,7 @@
         video y audio.
       </p>
       <h4>SOCK_RAW</h4>
-      <p class="lh-sm fs-5">
+      <p class="lh-sm fs-5" align="justify">
         Esta interfaz de conector omite el soporte integrado de la biblioteca
         para protocolos estándar como UDP (Protocolo de datagramas de usuario) y
         TCP (Protocolo de control de transmisión). Los sockets sin procesar son
@@ -99,7 +83,7 @@
       <br />
       <br />
       <h2 class="mt-6 mb-4">Funcionamiento</h2>
-      <p class="lh-sm fs-5">
+      <p class="lh-sm fs-5" align="justify">
         La configuración típica del sistema coloca el servidor en una máquina,
         con los clientes en otras máquinas. Los clientes se conectan al
         servidor, intercambian información y luego se desconectan. Un socket
@@ -135,22 +119,22 @@
           ></button>
         </div>
         <br>
-        <div class="carousel-inner border border-2 rounded-2 bg-light">
+        <div class="carousel-inner border border-2 rounded-2">
           <div class="carousel-item active" data-bs-interval="100000">
             <div class="row justify-content-center">
               <div class="col col-10 px-5 mb-5 mt-3">
                 <h4 class="text-center py-2">Programacion de sockets en TCP</h4>
-                <p class="lh-sm fs-6">
+                <p class="lh-sm fs-6" align="justify">
                   TCP significa Protocolo de control de transmisión. TCP es un
                   protocolo confiable orientado a conexión de la capa de
                   transporte. TCP establece la conexión antes de la transmisión
                   de datos.
                 </p>
                 <img class="rounded mx-auto d-block" src="assets/images/socket_tcp.png" alt="" />
-                <p class="lh-sm fs-6">
+                <p class="lh-sm fs-6" align="justify">
                   Pasos para establecer un socket TCP en el lado del cliente:
                 </p>
-                <ol>
+                <ol align="justify">
                   <li>
                     Usar la función socket() para crear un socket. Esto crea un
                     endpoint para las comunicaciones y devuelve un descriptor de
@@ -174,7 +158,7 @@
                   Pasos para establecer un socket TCP en el lado del
                   servidor:
                 </p>
-                <ol>
+                <ol align="justify">
                   <li>Usar socket() para establecer un socket.</li>
                   <li>
                     Utilizar la función bind() para vincular el socket a una
@@ -210,13 +194,13 @@
             <div class="row justify-content-center">
               <div class="col col-10 px-5 mb-5 mt-3">
                 <h4 class="text-center py-2">Programacion de sockets en UDP</h4>
-                <p class="lh-sm fs-6">
+                <p class="lh-sm fs-6" align="justify">
                   UDP significa Protocolo de datagramas de usuario. UDP es un protocolo de capa de transporte sin conexión y poco confiable. UDP no establece una conexión entre dos partes que se comunican antes de transmitir los datos. 
                 </p>
                 <img class="rounded mx-auto d-block" src="assets/images/socket_udp.png" alt="" />
                 <p class="lh-sm fs-6">
                 Para establecer una conexión de socket UDP en el lado del cliente:              </p>
-                <ol>
+                <ol align="justify">
                   <li>
                     Usar la función socket () para crear socket
                   </li>
@@ -229,7 +213,7 @@
                   Pasos para establecer un socket UDP en el lado del
                   servidor:
                 </p>
-                <ol>
+                <ol align="justify">
                   <li>Usar socket() para establecer un socket.</li>
                   <li>
                   Utilizar la función bind() para vincular el socket a una dirección.
@@ -264,7 +248,7 @@
       </div>
       <br>
       <br>
-      <p class="lh-sm fs-5">
+      <p class="lh-sm fs-5" align="justify">
         Las API de socket se encuentran en el modelo de comunicaciones entre la capa de aplicación y la capa de transporte. Las API de socket no son una capa en el modelo de comunicación. Las API de socket permiten que las aplicaciones interactúen con las capas de transporte o red del modelo de comunicaciones típico. Las flechas en la siguiente figura muestran la posición de un socket y la capa de comunicación que proporciona el socket.
       </p>
       <img class="rounded mx-auto d-block" src="assets/images/api_socket.png" alt="">

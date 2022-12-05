@@ -4,78 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
-    crossorigin="anonymous">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
     <title>Internet de las cosas</title>
     <!-- font family -->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cursive" type="text/css"/>
 </head>
-<body style="background-color: #F9F9F9;">
-    
-
-
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">Redes y Seguridad</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../dataComunication/dataComunicationSecurity.html">Seguridad en la comunicación de los datos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../webSecurity/webSecurity.html">Seguridad en la Web</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../sockets/sockets.html">Programación de aplicaciones con Sockets</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="internetOfThings.html">Internet de las cosas</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body>
+  <div id="nav"></div>
+  <script>
+    $(function () {
+      $("#nav").load("../components/navbar.html");
+    });
+  </script>
   <div style="text-align: center; margin-left:25%; margin-top:4%; width:50%; position: relative;">
     <img src="assets\images/IOT1.png" alt="Cinque Terre" width="40%" height="auto" style="opacity: 0.1;">
     <div style="position: absolute; top: 25%; width: 100%; text-align: center;" class="center">
-      <p style=" font-family: 'CursiveSerifBook'; font-size:xx-large;">INTERNET DE LAS COSAS</p>
-      <p style=" font-family: 'CursiveSerifBook'; font-size:larger;">¿Que es?</p>
-      <p style=" font-family: 'CursiveSerifBook'; font-size:larger;">El concepto es posible dividirlo en 2 partes:</p>
+      <h1 class="text-center mb-5 fw-bolder">Internet de las cosas</h1>
     </div>
   </div>
-
-  <div style="width:80%; margin-left:10%;">
-    <div class="row justify-content-center">
+  <br>
+  <div style="width:80%; margin-left:10%;" align="justify">
+    <h2>¿Que es?</h2>
+    <br>
+    <div class="row justify-content-center" >
       <div class="col-4">
-        <p style=" font-family: 'CursiveSerifBook'; font-size:larger;">Internet</p>
+        <p style="font-size:larger;">Internet</p>
         <hr style="height: 5px; width: 50%; background-color: black;"></hr>
-        <p style=" font-family: 'CursiveSerifBook'; font-size:medium;">La conocida red de redes que permite a nuestros equipos de computo estar interconectados y con ello acceder a recursos, servicios y paginas web en cualquier parte del mundo</p>
+        <p style="font-size:medium;" >La conocida red de redes que permite a nuestros equipos de computo estar interconectados y con ello acceder a recursos, servicios y paginas web en cualquier parte del mundo</p>
         <img src="assets\images/IOT2.png" alt="Cinque Terre" style="margin-left:25%;" width="30%">
       </div>
       <div class="col-1"></div>
       <div class="col-4">
-        <p style=" font-family: 'CursiveSerifBook'; font-size:larger;">Cosas</p>
+        <p style="  font-size:larger;">Cosas</p>
         <hr style="height: 5px; width: 50%; background-color: black;"></hr>
-        <p style=" font-family: 'CursiveSerifBook'; font-size:medium;">Objetos físicos que se encuentran en la vida diaria que cuentan con sensores, circuitos integrados y conectividad que les permite recolectar e intercambiar datos, son conocidos como dispositivos inteligentes</p>
+        <p style="  font-size:medium;">Objetos físicos que se encuentran en la vida diaria que cuentan con sensores, circuitos integrados y conectividad que les permite recolectar e intercambiar datos, son conocidos como dispositivos inteligentes</p>
         <img src="assets\images/IOT3.png" alt="Cinque Terre" style="margin-left:25%;" width="30%">
       </div>
     </div>
   </div>
 
-  <div class="row justify-content-center" style="margin-top: 4%; margin-bottom: 3%;">
+  <div class="row justify-content-center" style="margin-top: 4%; margin-bottom: 3%;" align="justify">
       <div class="col-5">
         <div style="text-align: center;">
           <div class="container">
-            <p style=" font-family: 'CursiveSerifBook'; font-size:xx-large;">¿QUE HACE UN DISPOSITIVO INTELIGENTE?</p>
+            <p style="  font-size:xx-large;">¿QUE HACE UN DISPOSITIVO INTELIGENTE?</p>
             <p style="font-size:medium;">Permiten el acceso a internet y deben ser capaces de cumplir con 1 o varias de las siguientes funciones:</p>
             
             <div class="accordion accordion-flush" id="accordionFlushExample" style="width:80%; padding-left: 10%;">
@@ -173,8 +156,8 @@
       <li class="page-item disabled">
         <a class="page-link" href="#">Previo</a>
       </li>
-      <li class="page-item disabled">
-        <a class="page-link" href="#">1</a>
+      <li class="page-item">
+        <a class="page-link" href="internetOfThings.html">1</a>
       </li>
       <li class="page-item">
         <a class="page-link" href="internetOfThingsHistory.html">2</a>
@@ -187,6 +170,8 @@
       </li>
     </ul>
   </nav>
+  <br>
+  <br>
   <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
