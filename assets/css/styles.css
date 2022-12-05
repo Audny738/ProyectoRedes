@@ -10,10 +10,6 @@ h1,h2{
   color: #497bbe
 }
 
-.active{
-    color: #274C77
-}
-
 .navbar-brand{
   color: #274C77,
 }
@@ -24,6 +20,10 @@ h1,h2{
 
 #hero{
   color: #ebf2fa;
+}
+
+.carousel-inner{
+  border-color: #A3CEF1
 }
 
 .hero-image {
