@@ -10,65 +10,52 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <title>Sockets</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Redes y Seguridad</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <div id="nav"></div>
+    <script>
+      $(function () {
+        $("#nav").load("../components/navbar.html");
+      });
+    </script>
+    <div class="container p-3">
+      <div
+        style="
+          text-align: center;
+          margin-left: 25%;
+          margin-top: 4%;
+          width: 50%;
+          position: relative;
+        "
+      >
+        <img
+          src="../assets/images/IOT1.png"
+          alt="Cinque Terre"
+          width="40%"
+          height="auto"
+          style="opacity: 0.1"
+        />
+        <div
+          style="position: absolute; top: 25%; width: 100%; text-align: center"
+          class="center"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="../dataComunication/dataComunicationSecurity.html"
-                >Seguridad en la comunicación de los datos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../webSecurity/webSecurity.html"
-                >Seguridad en la Web</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sockets.html"
-                >Programación de aplicaciones con Sockets</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="../internetOfThings/internetOfThings.html"
-                >Internet de las cosas</a
-              >
-            </li>
-          </ul>
+          <h1 class="text-center mb-5 fw-bolder">Programación de aplicaciones con sockets</h1>
         </div>
       </div>
-    </nav>
-    <div class="container p-3">
-      <h1 class="text-center mb-5">Programación de aplicaciones con sockets</h1>
+      <br />
+      <br />
       <h2>Introducción</h2>
-
       <div class="ratio ratio-16x9 my-4">
         <iframe
           class="embed-responsive-item"
@@ -79,14 +66,14 @@
           allowfullscreen
         ></iframe>
       </div>
-      <p class="lh-sm fs-5">
+      <p class="lh-sm fs-5" align="justify">
         Un socket es un mecanismo ideado para la comunicación entre un programa
         del servidor y un programa del cliente en una red. Se caracteriza por su
         interconectividad, es decir, permite enviar y recibir información entre
         procesos, incluso cuando estos se encuentran ubicados en diferentes
         máquinas.
       </p>
-      <p class="lh-sm fs-5">
+      <p class="lh-sm fs-5" align="justify">
         Dentro de los principios básicos que rigen el funcionamiento de un
         socket, se puede encontrar que para que ocurra el proceso de
         comunicación entre dos programas, es necesario que uno de los programas
@@ -94,7 +81,7 @@
         contar con la capacidad de intercambiar entre sí, cualquier secuencia de
         octetos o de datos que resulten relevantes para sus objetivos.
       </p>
-      <p class="lh-sm fs-5">
+      <p class="lh-sm fs-5" align="justify">
         Además de esto, permite la implementación de una arquitectura basada en el modelo cliente-servidor, donde la comunicación debe iniciarse por parte de uno de los programas «cliente»; mientras tanto, el programa servidor se encuentra a la espera de que el programa cliente inicie la comunicación. Por lo tanto, su función será la de permitir la lectura y escritura de información de los programas servidores y clientes, que posteriormente será transmitida por las diferentes capas de red del sistema.
       </p>
       <div class="row align-items-center">
@@ -102,7 +89,7 @@
           <img src="assets/images/socket.png" class="col-12 rounded mx-auto" alt="...">
         </div>
         <div class="col">
-          <ul class="list-group list-group-flush">
+          <ul class="list-group list-group-flush" align="justify">
             <li class="list-group-item">La programación de socket nos dice cómo podemos usar la API de socket para crear comunicación entre procesos locales y remotos.</li>
             <li class="list-group-item">El socket se crea mediante la combinación de la dirección IP y el número de puerto del software. Con esta combinación, el proceso conoce la dirección del sistema y la dirección de la aplicación donde se enviarán los datos.</li>
             <li class="list-group-item">": se utiliza para separar la dirección IP y el número de puerto. Por ejemplo: 192.168.1.67:80, 155.2.12.23:77, etc.</li>
@@ -110,9 +97,10 @@
           </div>
         </div>
     </div>
+    <br>
     <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-center">
-        <li class="page-item disabled">
+      <ul class="pagination justify-content-center" >
+        <li class="page-item disabled"> 
           <a class="page-link">Previo</a>
         </li>
         <li class="page-item"><a class="page-link" href="sockets.html">1</a></li>
@@ -123,6 +111,8 @@
         </li>
       </ul>
     </nav>
+    <br>
+    <br>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

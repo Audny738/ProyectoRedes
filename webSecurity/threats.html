@@ -11,48 +11,51 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body style="background-color: #c8e8f1">
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Redes y Seguridad</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+  <body>
+    <div id="nav"></div>
+    <script>
+      $(function () {
+        $("#nav").load("../components/navbar.html");
+      });
+    </script>
+    <div class="container p-3">
+      <div
+        style="
+          text-align: center;
+          margin-left: 25%;
+          margin-top: 4%;
+          width: 50%;
+          position: relative;
+        "
+      >
+        <img
+          src="../assets/images/IOT1.png"
+          alt="Cinque Terre"
+          width="40%"
+          height="auto"
+          style="opacity: 0.1"
+        />
+        <div
+          style="position: absolute; top: 25%; width: 100%; text-align: center"
+          class="center"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="webSecurity.html"
-                >Seguridad de la Web</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="importance.html"
-                >Principios de la Seguridad Web</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="methods.html"
-                >¿Cómo podemos mantener nuestras aplicaciones seguras?</a
-              >
-            </li>
-          </ul>
+          <h1 class="text-center mb-5 fw-bolder">Seguridad en la web</h1>
         </div>
       </div>
-    </nav>
-
-    <h1 class="site-title" style="text-align: center; padding: 5px">
-      Amenazas a la Seguridad Web
-    </h1>
-    <section class="content">
+      <br />
+      <br />
+      <h2>Amenazas a la Seguridad Web</h2>
       <div class="text-center">
         <img
           src="https://www.pwc.be/en/images/2col-visual-game-of-threats-man-cybersecurity-perpatrator-danger.png"
@@ -63,7 +66,7 @@
       <div></div>
       <article class="post">
         <div class="container">
-          <p align="justify">
+          <p align="justify" class="lh-sm fs-5">
             La definición de <strong>amenaza</strong> consiste en un evento que
             puede dañar y perjudicar un sistema de información. Ahora, una
             <strong>amenaza a la seguridad</strong> es un riesgo que puede dañar
@@ -72,7 +75,7 @@
             información personal y confidencial, robar el espacio del disco duro
             y acceder ilegalmente a las contraseñas.
           </p>
-          <p align="justify">
+          <p align="justify" class="lh-sm fs-5">
             Por lo general, la Seguridad Web lidia con dos tipos de atacantes:
             los <em>atacantes web</em> y los <em>atacantes de redes</em> Un
             <strong>atacante web</strong> controla al menos un servidor que
@@ -81,16 +84,26 @@
             atacantes web con la habilidad de detectar e interceptar todo el
             tráfico enviado entre dos <em>endpoints</em>.
           </p>
-          <p align="justify">
+          <p align="justify" class="lh-sm fs-5">
             Debido a la gran cantidad de ataques que existen en la web, es
             importante que los desarrolladores cuenten con un lugar que cuente
             con toda esta información. Por suerte, este lugar existe conocido
             como <strong>OWASP</strong>.
           </p>
-          <div class="clearfix">
+          <br>
+          <div class="clearfix" >
             <h3>OWASP</h3>
-            <div class="col-md-8 float-md-end mb-3 ms-md-3">
-              <p align="justify">
+            <div class="text-center">
+
+              <img
+              src="https://th.bing.com/th/id/R.aa684fe65e4a33a8d62aa0d8e050b317?rik=rAkTtKvzX3Evcw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-KsaRnl5Y_4g%2fUuWNUjLxBLI%2fAAAAAAAAAlk%2f0xJc0gGKIb0%2fs1600%2fowasp-logo.png&ehk=8olGVCeOv8pPZ4uhNnam8yM3ZgSNXOJY2kq%2bIfjSYR0%3d&risl=&pid=ImgRaw&r=0"
+              alt="OWASP-logo"
+              width="30%"
+              />
+            </div>
+            <br>
+            <div class="col-md-12 mb-3">
+              <p align="justify" class="lh-sm fs-5">
                 El <em>Proyecto de Aplicaciones Web Abiertas </em>(OWASP) es una
                 fundación sin fin de lucro que trabaja para mejorar la seguridad
                 del software. Cuenta con una gran comunidad que lidera una gran
@@ -99,13 +112,13 @@
                 esta manera se convierte en la referencia principal de los
                 desarrolladores para asegurar la web.
               </p>
-              <p align="justify">
+              <p align="justify" class="lh-sm fs-5">
                 Esta fundación también cuenta con el proyecto
                 <strong>OWASP Top 10</strong>. En este documento se listan las
                 10 vulnerabilidades más comunes de las aplicaciones. También
                 muestra los riesgos, impactos y las contramedidas.
               </p>
-              <p>
+              <p align="justify" class="lh-sm fs-5">
                 <em
                   ><strong>IMPORTANTE</strong>: El Top 10 de riesgos es
                   actualizado cada 3-4 años en donde reevalua a todas las nuevas
@@ -123,11 +136,7 @@
               </p>
             </div>
 
-            <img
-              src="https://th.bing.com/th/id/R.aa684fe65e4a33a8d62aa0d8e050b317?rik=rAkTtKvzX3Evcw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-KsaRnl5Y_4g%2fUuWNUjLxBLI%2fAAAAAAAAAlk%2f0xJc0gGKIb0%2fs1600%2fowasp-logo.png&ehk=8olGVCeOv8pPZ4uhNnam8yM3ZgSNXOJY2kq%2bIfjSYR0%3d&risl=&pid=ImgRaw&r=0"
-              alt="OWASP-logo"
-              width="30%"
-            />
+           
           </div>
         </div>
         <div id="top-ten" class="clearfix" style="padding: 40px">
@@ -137,7 +146,7 @@
             class="col-md-6 float-md-end mb-3 ms-md-3"
             alt="threads"
           />
-          <ol>
+          <ol class="lh-sm fs-5" align="justify">
             <li>
               <strong>Inyecciones</strong>: Suceden cuando un atacante envía
               información inválida a la aplicación web con la intención de que
@@ -204,17 +213,17 @@
           </ol>
         </div>
       </article>
-    </section>
+    </div>
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
         <li class="page-item">
           <a class="page-link" href="importance.html">Previous</a>
         </li>
         <li class="page-item">
-          <a class="page-link" href="webSecurity.html">1</a>
+          <a class="page-link" href="importance.html">1</a>
         </li>
         <li class="page-item">
-          <a class="page-link" href="importance.html">2</a>
+          <a class="page-link" href="threats.html">2</a>
         </li>
         <li class="page-item">
           <a class="page-link" href="methods.html">3</a>
@@ -224,5 +233,12 @@
         </li>
       </ul>
     </nav>
+    <br>
+    <br>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
